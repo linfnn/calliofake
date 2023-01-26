@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tra: '#83e6e2',
+                    },
+                    spacing: {
+                        '1': '8px',
+                        '2': '12px',
+                        '3': '16px',
+                        '4': '24px',
+                        '5': '32px',
+                        '6': '48px',
+                        '7': '100px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+    <link rel="stylesheet" href="./styles/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./table.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <strong>
+                Thời gian gọi đi(phút)
+            </strong>
+            <br><small> 2 nhân viên </small>
+        </div>
+        <table class="time">
+            <tr>
+                <th> # </th>
+                <th> Nhân viên</th>
+                <th> Mục tiêu</th>
+                <th> Hoàn thành</th>
+                <th> Tỷ lệ hoàn thành</th>
+            </tr>
+            <tr>
+                <td colspan="2"> TỔNG CỘNG</td>
+                <td> 200</td>
+                <td>0</td>
+                <td>0%</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sale CCC014</td>
+                <td>100</td>
+                <td>0</td>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

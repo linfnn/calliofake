@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dropup.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                }
+            }
+        }
+
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="dropdown border-2 px-8 py-1 w-fit cursor-pointer relative">
+        Dropdown
+        <div class=" dropup-icon w-4 h-3 absolute top-10">
+            <img src="./styles/img/dropup-icon.png">
+        </div>
+        <ul class="dropdown-content min-w-max absolute top-14 border-2">
+    
+            <li class="vd"> Khách hàng </li>
+            <li class="vd"> Danh bạ nội bộ </li>
+            <li class="vd"> Danh bạ nội bộ </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
